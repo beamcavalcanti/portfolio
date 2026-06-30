@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Beatriz Cavalcanti — Full Stack Developer. ADS student at FIAP building interfaces, backends, and everything in between." />
+  <title>Beatriz Cavalcanti · Full Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="Go to top">bea.dev</a>
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#about"    class="nav-link">about</a></li>
+        <li><a href="#stack"    class="nav-link">stack</a></li>
+        <li><a href="#projects" class="nav-link">projects</a></li>
+        <li><a href="#contact"  class="nav-link">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ── HERO ── -->
+    <section id="hero" class="section-hero" aria-label="Introduction">
+      <div class="hero-content">
+        <div class="terminal-line" aria-hidden="true">
+          <span class="prompt-char">$</span>
+          <span class="typed-output" id="typed-output"></span>
+          <span class="cursor">█</span>
+        </div>
+        <h1 class="hero-name">beatriz cavalcanti</h1>
+        <p class="hero-title">Full Stack Developer</p>
+        <div class="hero-links">
+          <a
+            href="https://github.com/beamcavalcanti"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-retro"
+            aria-label="Open GitHub profile in new tab"
+          >GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/beatriz-cavalcanti-711301195/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-retro btn-secondary"
+            aria-label="Open LinkedIn profile in new tab"
+          >LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title">
+          <span class="prompt-char" aria-hidden="true">&gt;</span> about
+        </h2>
+        <div class="about-grid">
+          <div class="avatar-wrapper">
+            <img
+              src="https://github.com/beamcavalcanti.png"
+              alt="Beatriz Cavalcanti"
+              class="avatar"
+              width="120"
+              height="120"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Full Stack Developer in career transition — currently studying
+              <strong>Systems Analysis and Development — FIAP</strong>.
+            </p>
+            <p>
+              I build from the ground up: responsive interfaces, backend services, and the
+              analytics layers in between. Production experience with landing pages
+              deployed end-to-end, Google Tag Manager configuration, and Google Ads
+              conversion tracking.
+            </p>
+            <div class="languages">
+              <h3 class="subsection-title">languages</h3>
+              <ul class="lang-list" role="list">
+                <li>
+                  <span class="lang-tag" aria-hidden="true">PT</span>
+                  Portuguese
+                  <span class="lang-level">Native</span>
+                </li>
+                <li>
+                  <span class="lang-tag" aria-hidden="true">EN</span>
+                  English
+                  <span class="lang-level">Advanced — Cambridge FCE</span>
+                </li>
+                <li>
+                  <span class="lang-tag" aria-hidden="true">ES</span>
+                  Spanish
+                  <span class="lang-level">Intermediate — SIELE</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STACK ── -->
+    <section id="stack" class="section section-alt" aria-labelledby="stack-heading">
+      <div class="container">
+        <h2 id="stack-heading" class="section-title">
+          <span class="prompt-char" aria-hidden="true">&gt;</span> stack
+        </h2>
+        <div class="stack-grid">
+          <div class="stack-group">
+            <h3 class="stack-group-title">frontend</h3>
+            <ul class="tech-list" role="list">
+              <li class="tech-tag">HTML</li>
+              <li class="tech-tag">CSS</li>
+              <li class="tech-tag">JavaScript</li>
+              <li class="tech-tag">React</li>
+              <li class="tech-tag">TypeScript</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-group-title">backend</h3>
+            <ul class="tech-list" role="list">
+              <li class="tech-tag">Java</li>
+              <li class="tech-tag">Spring Boot</li>
+              <li class="tech-tag">Python</li>
+              <li class="tech-tag">Oracle SQL</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-group-title">tools</h3>
+            <ul class="tech-list" role="list">
+              <li class="tech-tag">Git</li>
+              <li class="tech-tag">Figma</li>
+              <li class="tech-tag">GTM</li>
+              <li class="tech-tag">Google Ads</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section-title">
+          <span class="prompt-char" aria-hidden="true">&gt;</span> projects
+        </h2>
+        <div class="projects-grid">
+
+          <!-- AgroSat Alert -->
+          <article class="project-card" aria-labelledby="proj-agrosat">
+            <div class="project-header">
+              <h3 id="proj-agrosat" class="project-title">AgroSat Alert</h3>
+              <span class="project-badge">Academic</span>
+            </div>
+            <p class="project-desc">
+              Climate alert platform for family farmers. Aggregates satellite and weather
+              data to send timely alerts about extreme events.
+              Built in collaboration as part of FIAP's Global Solution program.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>Next.js</li>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <div class="project-links">
+              <!--
+                TODO: substitua o href abaixo pelo link real do repositório
+                ex: https://github.com/beamcavalcanti/agrosat-alert
+              -->
+              <a
+                href="https://github.com/beamcavalcanti"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="AgroSat Alert — view on GitHub (opens in new tab)"
+              >[ GitHub ]</a>
+            </div>
+          </article>
+
+          <!-- OASJ Landing Pages -->
+          <article class="project-card" aria-labelledby="proj-oasj">
+            <div class="project-header">
+              <h3 id="proj-oasj" class="project-title">OASJ Landing Pages</h3>
+              <span class="project-badge project-badge--live">Production</span>
+            </div>
+            <p class="project-desc">
+              Two production landing pages built from scratch and deployed on Hostgator.
+              Full setup includes Google Tag Manager and Google Ads conversion tracking.
+            </p>
+            <ul class="project-tags" role="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>GTM</li>
+              <li>Google Ads</li>
+              <li>Hostgator</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://direitodefamilia.oasj.adv.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="OASJ Direito de Família — open live site (opens in new tab)"
+              >[ direitodefamilia ]</a>
+              <a
+                href="https://internacional.oasj.adv.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="OASJ Internacional — open live site (opens in new tab)"
+              >[ internacional ]</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title">
+          <span class="prompt-char" aria-hidden="true">&gt;</span> contact
+        </h2>
+        <p class="contact-intro">
+          Open to collaborations, internships, and new opportunities.
+        </p>
+        <ul class="contact-links" role="list">
+          <li>
+            <a
+              href="https://github.com/beamcavalcanti"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+              aria-label="GitHub profile — github.com/beamcavalcanti (opens in new tab)"
+            >
+              <span class="contact-icon" aria-hidden="true">[ GH ]</span>
+              github.com/beamcavalcanti
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/beatriz-cavalcanti-711301195/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+              aria-label="LinkedIn profile (opens in new tab)"
+            >
+              <span class="contact-icon" aria-hidden="true">[ LI ]</span>
+              linkedin.com/in/beatriz-cavalcanti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">beatriz cavalcanti · <span id="footer-year"></span> · built with HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
