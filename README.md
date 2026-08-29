@@ -4,7 +4,7 @@
 
 **Personal portfolio — Beatriz Cavalcanti**
 
-[![Live](https://img.shields.io/badge/Live-bea--dev.vercel.app-7dcfff?style=for-the-badge&labelColor=0d0d0d)](https://bea-dev.vercel.app)
+[![Live](https://img.shields.io/badge/Live-beamcavalcanti.vercel.app-7dcfff?style=for-the-badge&labelColor=0d0d0d)](https://beamcavalcanti.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-beamcavalcanti-bb9af7?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0d0d)](https://github.com/beamcavalcanti)
 
 </div>
