@@ -10,6 +10,8 @@ Portfolio pessoal de Beatriz Cavalcanti, desenvolvido com HTML, CSS e JavaScript
 ## Projetos
 
 - AgroSat Alert
+- TrilhaPro
+- Care Predict+
 - FoodRescue
 - Moneasy
 - OASJ Landing Pages
