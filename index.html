@@ -5,196 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Beatriz Cavalcanti — Full Stack Developer building thoughtful interfaces, backend services, and digital experiences."
+      content="Beatriz Cavalcanti — Full Stack Developer. ADS student at FIAP building interfaces, backends, and everything in between."
     />
-    <meta name="theme-color" content="#101018" />
-    <title>Beatriz Cavalcanti — Full Stack Developer</title>
+    <meta name="theme-color" content="#0a0a0f" />
+    <title>Beatriz Cavalcanti · Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="noise" aria-hidden="true"></div>
+    <div class="crt-overlay" aria-hidden="true"></div>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Beatriz Cavalcanti home">
-        <span class="brand-mark">BC</span>
-        <span>beatrizcavalcanti.com</span>
-      </a>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-brand" aria-label="Go to top">bea.dev</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">about</a></li>
+          <li><a href="#stack" class="nav-link">stack</a></li>
+          <li><a href="#projects" class="nav-link">projects</a></li>
+          <li><a href="#contact" class="nav-link">contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span>
-        <span class="sr-only">Toggle navigation</span>
-      </button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#profile">Profile</a>
-        <a href="#stack">Stack</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" class="nav-cta">Contact <span>↗</span></a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero section-shell" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="dot"></span> Full Stack Developer · São Paulo, BR</p>
-          <h1 id="hero-title">Turning ideas into <em>useful</em> digital products.</h1>
-          <p class="hero-intro">
-            I’m Beatriz — a developer in transition, building responsive interfaces,
-            backend services, and the details that make products feel intentional.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore projects <span>↓</span></a>
-            <a class="button button-quiet" href="https://github.com/beamcavalcanti" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+    <main id="main-content">
+      <section id="hero" class="section-hero" aria-label="Introduction">
+        <div class="hero-content">
+          <div class="terminal-line" aria-hidden="true">
+            <span class="prompt-char">$</span>
+            <span class="typed-output" id="typed-output"></span>
+            <span class="cursor">█</span>
           </div>
-        </div>
-
-        <aside class="hero-panel" aria-label="Quick profile summary">
-          <div class="panel-topline"><span>profile.exe</span><span>01</span></div>
-          <div class="panel-avatar">BC</div>
-          <div class="panel-name">Beatriz Cavalcanti</div>
-          <div class="panel-role">Developer &amp; systems thinker</div>
-          <div class="panel-rule"></div>
-          <dl class="panel-details">
-            <div><dt>currently</dt><dd>FIAP · ADS</dd></div>
-            <div><dt>focus</dt><dd>Web · Backend · Data</dd></div>
-            <div><dt>status</dt><dd class="status"><span class="dot"></span> Open to opportunities</dd></div>
-          </dl>
-        </aside>
-      </section>
-
-      <section id="profile" class="section-shell content-section" aria-labelledby="profile-title">
-        <div class="section-heading">
-          <span class="section-number">01</span>
-          <h2 id="profile-title">A little about me</h2>
-        </div>
-        <div class="profile-grid">
-          <p class="lead-copy">
-            Full Stack Developer in career transition, currently studying
-            <strong>Systems Analysis and Development at FIAP</strong>.
-          </p>
-          <div class="body-copy">
-            <p>
-              I like understanding the whole picture: how a user moves through an interface,
-              how a service handles the request, and how data helps a team make better decisions.
-            </p>
-            <p>
-              My production experience includes landing pages built end-to-end, Google Tag Manager
-              configuration, and Google Ads conversion tracking. I’m always looking for the next
-              problem worth solving.
-            </p>
-          </div>
-        </div>
-        <div class="profile-facts" aria-label="Profile facts">
-          <div><strong>04</strong><span>featured projects</span></div>
-          <div><strong>03</strong><span>spoken languages</span></div>
-          <div><strong>∞</strong><span>things left to build</span></div>
-        </div>
-      </section>
-
-      <section id="stack" class="section-shell content-section stack-section" aria-labelledby="stack-title">
-        <div class="section-heading">
-          <span class="section-number">02</span>
-          <h2 id="stack-title">Tools I use to build</h2>
-        </div>
-        <div class="stack-grid">
-          <div class="stack-card">
-            <span class="stack-index">A</span>
-            <h3>Frontend</h3>
-            <p>Interfaces that are responsive, accessible, and clear.</p>
-            <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>TypeScript</li></ul>
-          </div>
-          <div class="stack-card">
-            <span class="stack-index">B</span>
-            <h3>Backend</h3>
-            <p>Reliable foundations for real-world product logic.</p>
-            <ul><li>Java</li><li>Spring Boot</li><li>Python</li><li>Oracle SQL</li></ul>
-          </div>
-          <div class="stack-card">
-            <span class="stack-index">C</span>
-            <h3>Workflow</h3>
-            <p>From a first sketch to a measurable production result.</p>
-            <ul><li>Git</li><li>Figma</li><li>GTM</li><li>Google Ads</li></ul>
+          <h1 class="hero-name">beatriz cavalcanti</h1>
+          <p class="hero-title">Full Stack Developer</p>
+          <div class="hero-links">
+            <a href="https://github.com/beamcavalcanti" target="_blank" rel="noopener noreferrer" class="btn-retro">GitHub</a>
+            <a href="https://www.linkedin.com/in/beatriz-cavalcanti-711301195/" target="_blank" rel="noopener noreferrer" class="btn-retro btn-secondary">LinkedIn</a>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section-shell content-section" aria-labelledby="projects-title">
-        <div class="section-heading heading-with-note">
-          <div><span class="section-number">03</span><h2 id="projects-title">Selected projects</h2></div>
-          <span class="heading-note">a growing archive</span>
-        </div>
-        <div class="project-list">
-          <article class="project-card project-featured">
-            <div class="project-meta"><span>01 / 04</span><span class="project-type live">Production</span></div>
-            <div class="project-main">
-              <h3>OASJ Landing Pages</h3>
-              <p>Three production landing pages built from scratch, with analytics setup and conversion tracking for a law firm.</p>
-              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GTM</span><span>Google Ads</span></div>
-              <div class="project-links">
-                <a href="https://direitodefamilia.oasj.adv.br" target="_blank" rel="noopener noreferrer">Direito de Família ↗</a>
-                <a href="https://internacional.oasj.adv.br" target="_blank" rel="noopener noreferrer">Internacional ↗</a>
-                <a href="https://criminal.oasj.adv.br/" target="_blank" rel="noopener noreferrer">Criminal ↗</a>
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading" class="section-title"><span class="prompt-char" aria-hidden="true">&gt;</span> about</h2>
+          <div class="about-grid">
+            <div class="avatar-wrapper">
+              <img src="https://github.com/beamcavalcanti.png" alt="Beatriz Cavalcanti" class="avatar" width="120" height="120" loading="lazy" />
+            </div>
+            <div class="about-text">
+              <p>Full Stack Developer in career transition — currently studying <strong>Systems Analysis and Development — FIAP</strong>.</p>
+              <p>I build from the ground up: responsive interfaces, backend services, and the analytics layers in between. Production experience with landing pages deployed end-to-end, Google Tag Manager configuration, and Google Ads conversion tracking.</p>
+              <div class="languages">
+                <h3 class="subsection-title">languages</h3>
+                <ul class="lang-list">
+                  <li><span class="lang-tag" aria-hidden="true">PT</span> Portuguese <span class="lang-level">Native</span></li>
+                  <li><span class="lang-tag" aria-hidden="true">EN</span> English <span class="lang-level">Advanced — Cambridge FCE</span></li>
+                  <li><span class="lang-tag" aria-hidden="true">ES</span> Spanish <span class="lang-level">Intermediate — SIELE</span></li>
+                </ul>
               </div>
             </div>
-            <span class="project-arrow">↗</span>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta"><span>02 / 04</span><span class="project-type">Academic</span></div>
-            <div class="project-main">
-              <h3>AgroSat Alert</h3>
-              <p>A climate alert platform for family farmers, bringing satellite and weather data together to flag extreme events.</p>
-              <div class="project-tags"><span>Next.js</span><span>React</span><span>TypeScript</span><span>GitHub Pages</span></div>
-              <div class="project-links"><a href="https://github.com/beamcavalcanti/agrosat-alert" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a><a href="https://beamcavalcanti.github.io/agrosat-alert/" target="_blank" rel="noopener noreferrer">Live project ↗</a></div>
-            </div>
-            <span class="project-arrow">↗</span>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta"><span>03 / 04</span><span class="project-type">Academic</span></div>
-            <div class="project-main">
-              <h3>FoodRescue</h3>
-              <p>An Android MVP connecting surplus food with people and institutions while making ESG impact visible.</p>
-              <div class="project-tags"><span>Kotlin</span><span>Android</span><span>Jetpack Compose</span><span>Material 3</span></div>
-              <div class="project-links"><a href="https://github.com/beamcavalcanti/FoodRescue" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div>
-            </div>
-            <span class="project-arrow">↗</span>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta"><span>04 / 04</span><span class="project-type">Academic</span></div>
-            <div class="project-main">
-              <h3>Moneasy</h3>
-              <p>A personal finance project combining a responsive prototype, Oracle data modeling, and a Java CRUD backend.</p>
-              <div class="project-tags"><span>Java 17</span><span>JDBC</span><span>Oracle SQL</span><span>Maven</span></div>
-              <div class="project-links"><a href="https://github.com/beamcavalcanti/Moneasy" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div>
-            </div>
-            <span class="project-arrow">↗</span>
-          </article>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="contact-section section-shell" aria-labelledby="contact-title">
-        <div class="contact-kicker">04 / Let’s talk</div>
-        <h2 id="contact-title">Have a good problem?<br /><em>Let’s build the answer.</em></h2>
-        <p>Open to collaborations, internships, and new opportunities.</p>
-        <div class="contact-actions">
-          <a class="button button-primary" href="https://www.linkedin.com/in/beatriz-cavalcanti-711301195/" target="_blank" rel="noopener noreferrer">Open LinkedIn <span>↗</span></a>
-          <a class="button button-quiet" href="https://github.com/beamcavalcanti" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+      <section id="stack" class="section section-alt" aria-labelledby="stack-heading">
+        <div class="container">
+          <h2 id="stack-heading" class="section-title"><span class="prompt-char" aria-hidden="true">&gt;</span> stack</h2>
+          <div class="stack-grid">
+            <div class="stack-group">
+              <h3 class="stack-group-title">frontend</h3>
+              <ul class="tech-list"><li class="tech-tag">HTML</li><li class="tech-tag">CSS</li><li class="tech-tag">JavaScript</li><li class="tech-tag">React</li><li class="tech-tag">TypeScript</li></ul>
+            </div>
+            <div class="stack-group">
+              <h3 class="stack-group-title">backend</h3>
+              <ul class="tech-list"><li class="tech-tag">Java</li><li class="tech-tag">Spring Boot</li><li class="tech-tag">Python</li><li class="tech-tag">Oracle SQL</li></ul>
+            </div>
+            <div class="stack-group">
+              <h3 class="stack-group-title">tools</h3>
+              <ul class="tech-list"><li class="tech-tag">Git</li><li class="tech-tag">Figma</li><li class="tech-tag">GTM</li><li class="tech-tag">Google Ads</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="container">
+          <h2 id="projects-heading" class="section-title"><span class="prompt-char" aria-hidden="true">&gt;</span> projects</h2>
+          <div class="projects-grid">
+            <article class="project-card" aria-labelledby="proj-agrosat">
+              <div class="project-header"><h3 id="proj-agrosat" class="project-title">AgroSat Alert</h3><span class="project-badge">Academic</span></div>
+              <p class="project-desc">Climate alert platform for family farmers. Aggregates satellite and weather data to send timely alerts about extreme events. Built in collaboration as part of FIAP's Global Solution program.</p>
+              <ul class="project-tags"><li>Next.js</li><li>React</li><li>TypeScript</li><li>GitHub Pages</li></ul>
+              <div class="project-links"><a href="https://github.com/beamcavalcanti/agrosat-alert" target="_blank" rel="noopener noreferrer" class="project-link">[ GitHub ]</a><a href="https://beamcavalcanti.github.io/agrosat-alert/" target="_blank" rel="noopener noreferrer" class="project-link">[ Live ]</a></div>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj-foodrescue">
+              <div class="project-header"><h3 id="proj-foodrescue" class="project-title">FoodRescue</h3><span class="project-badge">Academic</span></div>
+              <p class="project-desc">Collaborative Android MVP developed at FIAP to connect surplus food with people and institutions, combining food rescue flows with ESG impact metrics.</p>
+              <ul class="project-tags"><li>Kotlin</li><li>Android</li><li>Jetpack Compose</li><li>Material 3</li></ul>
+              <div class="project-links"><a href="https://github.com/beamcavalcanti/FoodRescue" target="_blank" rel="noopener noreferrer" class="project-link">[ GitHub ]</a></div>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj-moneasy">
+              <div class="project-header"><h3 id="proj-moneasy" class="project-title">Moneasy</h3><span class="project-badge">Academic</span></div>
+              <p class="project-desc">Personal finance project developed in stages at FIAP. Brings together a responsive prototype, Oracle database modeling, and a Java 17 backend with JDBC CRUD operations.</p>
+              <ul class="project-tags"><li>Java 17</li><li>JDBC</li><li>Oracle SQL</li><li>Maven</li><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul>
+              <div class="project-links"><a href="https://github.com/beamcavalcanti/Moneasy" target="_blank" rel="noopener noreferrer" class="project-link">[ GitHub ]</a></div>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj-oasj">
+              <div class="project-header"><h3 id="proj-oasj" class="project-title">OASJ Landing Pages</h3><span class="project-badge project-badge--live">Production</span></div>
+              <p class="project-desc">Three production landing pages built from scratch and deployed on Hostgator. Full setup includes Google Tag Manager and Google Ads conversion tracking.</p>
+              <ul class="project-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GTM</li><li>Google Ads</li><li>Hostgator</li></ul>
+              <div class="project-links"><a href="https://direitodefamilia.oasj.adv.br" target="_blank" rel="noopener noreferrer" class="project-link">[ direitodefamilia ]</a><a href="https://internacional.oasj.adv.br" target="_blank" rel="noopener noreferrer" class="project-link">[ internacional ]</a><a href="https://criminal.oasj.adv.br/" target="_blank" rel="noopener noreferrer" class="project-link">[ criminal ]</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading" class="section-title"><span class="prompt-char" aria-hidden="true">&gt;</span> contact</h2>
+          <p class="contact-intro">Open to collaborations, internships, and new opportunities.</p>
+          <ul class="contact-links">
+            <li><a href="https://github.com/beamcavalcanti" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-icon" aria-hidden="true">[ GH ]</span> github.com/beamcavalcanti</a></li>
+            <li><a href="https://www.linkedin.com/in/beatriz-cavalcanti-711301195/" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-icon" aria-hidden="true">[ LI ]</span> linkedin.com/in/beatriz-cavalcanti</a></li>
+          </ul>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer section-shell">
-      <span>© <span id="year"></span> Beatriz Cavalcanti</span>
-      <span>Built with HTML, CSS &amp; JS</span>
-      <a href="#top">Back to top ↑</a>
+    <footer class="footer">
+      <div class="container"><p class="footer-text">beatriz cavalcanti · <span id="footer-year"></span> · built with HTML, CSS &amp; JS</p></div>
     </footer>
 
     <script src="script.js"></script>
