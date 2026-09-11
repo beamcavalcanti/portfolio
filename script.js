@@ -92,7 +92,7 @@ if (footerYear) footerYear.textContent = new Date().getFullYear();
       'projects.academic': 'Academic',
       'projects.production': 'Production',
       'projects.live': '[ Live ]',
-      'projects.agrosat.description': 'Climate alert platform for family farmers. Aggregates satellite and weather data to send timely alerts about extreme events. Built in collaboration as part of FIAP's Global Solution program.',
+      "projects.agrosat.description": "Climate alert platform for family farmers. Aggregates satellite and weather data to send timely alerts about extreme events. Built in collaboration as part of FIAP's Global Solution program.",
       'projects.foodrescue.description': 'Collaborative Android MVP developed at FIAP to connect surplus food with people and institutions, combining food rescue flows with ESG impact metrics.',
       'projects.moneasy.description': 'Personal finance project developed in stages at FIAP. Brings together a responsive prototype, Oracle database modeling, and a Java 17 backend with JDBC CRUD operations.',
       'projects.inProgress': 'In progress',
