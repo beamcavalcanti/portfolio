@@ -1,14 +1,21 @@
 <!doctype html>
-<html lang="pt-BR"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Beatriz Cavalcanti — Desenvolvedora Full Stack. Estudante de Análise e Desenvolvimento de Sistemas na FIAP.">
-    <meta name="theme-color" content="#0a0a0f">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Beatriz Cavalcanti — Desenvolvedora Full Stack. Estudante de Análise e Desenvolvimento de Sistemas na FIAP."
+    />
+    <meta name="theme-color" content="#0a0a0f" />
     <title>Beatriz Cavalcanti · Desenvolvedora Full Stack</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260910-2">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=20260910-2" />
   </head>
   <body>
     <div class="crt-overlay" aria-hidden="true"></div>
@@ -41,15 +48,24 @@
         <div class="hero-content">
           <div class="terminal-line" aria-hidden="true">
             <span class="prompt-char">$</span>
-            <span class="typed-output" id="typed-output">w</span>
+            <span class="typed-output" id="typed-output"></span>
             <span class="cursor">█</span>
           </div>
           <h1 class="hero-name">beatriz cavalcanti</h1>
           <p class="hero-title" data-i18n="hero.title">Desenvolvedora Full Stack</p>
+          <div class="hero-status" aria-label="Status atual" data-i18n-aria-label="hero.statusAria">
+            <span class="status-dot" aria-hidden="true">●</span>
+            <span data-i18n="hero.status">disponível para oportunidades</span>
+          </div>
+          <div class="hero-readout" aria-label="Resumo profissional" data-i18n-aria-label="hero.readoutAria">
+            <div class="readout-cell"><span class="readout-label" data-i18n="hero.readoutProfile">perfil</span><span class="readout-value">full_stack</span></div>
+            <div class="readout-cell"><span class="readout-label" data-i18n="hero.readoutFocus">foco</span><span class="readout-value">interfaces + APIs</span></div>
+            <div class="readout-cell"><span class="readout-label" data-i18n="hero.readoutStatus">status</span><span class="readout-value readout-value--accent">online</span></div>
+          </div>
           <div class="hero-links">
             <a href="https://github.com/beamcavalcanti" target="_blank" rel="noopener noreferrer" class="btn-retro">GitHub</a>
             <a href="https://www.linkedin.com/in/beatriz-cavalcanti-711301195/" target="_blank" rel="noopener noreferrer" class="btn-retro btn-secondary">LinkedIn</a>
-                          <a href="mailto:bmcavalcanti.tech@gmail.com" class="btn-retro btn-email">E-mail</a>
+            <a href="mailto:bmcavalcanti.tech@gmail.com" class="btn-retro btn-email">E-mail</a>
           </div>
         </div>
       </section>
@@ -59,7 +75,7 @@
           <h2 id="about-heading" class="section-title"><span class="prompt-char" aria-hidden="true">&gt;</span> <span data-i18n="sections.about">sobre</span></h2>
           <div class="about-grid">
             <div class="avatar-wrapper">
-              <img src="https://github.com/beamcavalcanti.png" alt="Beatriz Cavalcanti" class="avatar" width="120" height="120" loading="lazy">
+              <img src="https://github.com/beamcavalcanti.png" alt="Beatriz Cavalcanti" class="avatar" width="120" height="120" loading="lazy" />
             </div>
             <div class="about-text">
               <p><span data-i18n="about.introBefore">Desenvolvedora Full Stack em transição de carreira — atualmente cursando </span><strong data-i18n="about.degree">Análise e Desenvolvimento de Sistemas — FIAP</strong><span data-i18n="about.introAfter">.</span></p>
@@ -101,7 +117,8 @@
         <div class="container">
           <h2 id="projects-heading" class="section-title"><span class="prompt-char" aria-hidden="true">&gt;</span> <span data-i18n="sections.projects">projetos</span></h2>
           <div class="projects-grid">
-            <article class="project-card" aria-labelledby="proj-agrosat">
+            <article class="project-card project-card--featured" aria-labelledby="proj-agrosat">
+              <div class="window-chrome"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-file">agrosat-alert.exe</span><span class="window-mark">↗</span></div>
               <div class="project-header"><h3 id="proj-agrosat" class="project-title">AgroSat Alert</h3><span class="project-badge" data-i18n="projects.academic">Acadêmico</span></div>
               <p class="project-desc" data-i18n="projects.agrosat.description">Plataforma de alertas climáticos para agricultores familiares. Reúne dados de satélite e clima para enviar alertas sobre eventos extremos. Desenvolvida em colaboração no programa Global Solution da FIAP.</p>
               <ul class="project-tags"><li>Next.js</li><li>React</li><li>TypeScript</li><li>GitHub Pages</li></ul>
@@ -109,6 +126,7 @@
             </article>
 
             <article class="project-card" aria-labelledby="proj-foodrescue">
+              <div class="window-chrome"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-file">foodrescue.apk</span><span class="window-mark">↗</span></div>
               <div class="project-header"><h3 id="proj-foodrescue" class="project-title">FoodRescue</h3><span class="project-badge" data-i18n="projects.academic">Acadêmico</span></div>
               <p class="project-desc" data-i18n="projects.foodrescue.description">MVP colaborativo para Android desenvolvido na FIAP para conectar excedentes de alimentos a pessoas e instituições, combinando fluxos de resgate de alimentos com métricas de impacto ESG.</p>
               <ul class="project-tags"><li>Kotlin</li><li>Android</li><li>Jetpack Compose</li><li>Material 3</li></ul>
@@ -116,6 +134,7 @@
             </article>
 
             <article class="project-card" aria-labelledby="proj-moneasy">
+              <div class="window-chrome"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-file">moneasy.jar</span><span class="window-mark">↗</span></div>
               <div class="project-header"><h3 id="proj-moneasy" class="project-title">Moneasy</h3><span class="project-badge" data-i18n="projects.academic">Acadêmico</span></div>
               <p class="project-desc" data-i18n="projects.moneasy.description">Projeto de finanças pessoais desenvolvido em etapas na FIAP. Reúne um protótipo responsivo, modelagem de banco Oracle e um backend em Java 17 com operações CRUD via JDBC.</p>
               <ul class="project-tags"><li>Java 17</li><li>JDBC</li><li>Oracle SQL</li><li>Maven</li><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul>
@@ -123,6 +142,7 @@
             </article>
 
             <article class="project-card project-card--in-progress" aria-labelledby="proj-devlog">
+              <div class="window-chrome"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-file">devlog-api.wip</span><span class="window-mark">↗</span></div>
               <div class="project-header"><h3 id="proj-devlog" class="project-title">DevLog API</h3><span class="project-badge project-badge--progress" data-i18n="projects.inProgress">Em desenvolvimento</span></div>
               <p class="project-desc" data-i18n="projects.devlog.description">API REST em desenvolvimento para organizar projetos, tecnologias e atualizações do portfólio, com autenticação e persistência de dados.</p>
               <ul class="project-tags"><li>Java 17</li><li>Spring Boot</li><li>REST API</li><li>Oracle SQL</li></ul>
@@ -130,6 +150,7 @@
             </article>
 
             <article class="project-card" aria-labelledby="proj-oasj">
+              <div class="window-chrome"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-file">oasj-pages.live</span><span class="window-mark">↗</span></div>
               <div class="project-header"><h3 id="proj-oasj" class="project-title">OASJ Landing Pages</h3><span class="project-badge project-badge--live" data-i18n="projects.production">Produção</span></div>
               <p class="project-desc" data-i18n="projects.oasj.description">Três landing pages de produção construídas do zero e publicadas na Hostgator. A configuração inclui Google Tag Manager e acompanhamento de conversões no Google Ads.</p>
               <ul class="project-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GTM</li><li>Google Ads</li><li>Hostgator</li></ul>
@@ -153,10 +174,9 @@
     </main>
 
     <footer class="footer">
-      <div class="container"><p class="footer-text">beatriz cavalcanti · <span id="footer-year">2026</span> · <span data-i18n="footer.builtWith">feito com HTML, CSS &amp; JS</span></p></div>
+      <div class="container"><p class="footer-text">beatriz cavalcanti · <span id="footer-year"></span> · <span data-i18n="footer.builtWith">feito com HTML, CSS &amp; JS</span></p></div>
     </footer>
 
-    <script src="script.js?v=20260910"></script>
-  
-
-</body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
+    <script src="script.js?v=20260910-2"></script>
+  </body>
+</html>
