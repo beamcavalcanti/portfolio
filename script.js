@@ -52,7 +52,7 @@ if (footerYear) footerYear.textContent = new Date().getFullYear();
       'projects.inProgress': 'Em desenvolvimento',
       'projects.devlog.description': 'API REST em desenvolvimento para organizar projetos, tecnologias e atualizações do portfólio, com autenticação e persistência de dados.',
       'projects.comingSoon': '[ Em breve ]',
-      'projects.oasj.description': 'Três landing pages de produção construídas do zero e publicadas na Hostgator. A configuração inclui Google Tag Manager e acompanhamento de conversões no Google Ads.',
+      'projects.oasj.description': 'Landing pages de produção construídas do zero e publicadas na Hostgator, com interações preparadas para analytics, Google Tag Manager e acompanhamento de conversões no Google Ads.',
       'contact.intro': 'Aberta a colaborações, estágios e novas oportunidades.',
       'footer.builtWith': 'feito com HTML, CSS & JS',
       'language.switchToEnglish': 'Mudar idioma para inglês'
@@ -102,7 +102,7 @@ if (footerYear) footerYear.textContent = new Date().getFullYear();
       'projects.inProgress': 'In progress',
       'projects.devlog.description': 'REST API in progress to organize projects, technologies, and portfolio updates, with authentication and data persistence.',
       'projects.comingSoon': '[ Coming soon ]',
-      'projects.oasj.description': 'Three production landing pages built from scratch and deployed on Hostgator. Full setup includes Google Tag Manager and Google Ads conversion tracking.',
+      'projects.oasj.description': 'Production landing pages built from scratch and deployed on Hostgator, with analytics-ready interactions, Google Tag Manager, and Google Ads conversion tracking.',
       'contact.intro': 'Open to collaborations, internships, and new opportunities.',
       'footer.builtWith': 'built with HTML, CSS & JS',
       'language.switchToPortuguese': 'Change language to Portuguese'
